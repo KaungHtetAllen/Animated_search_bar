@@ -4,7 +4,7 @@ body{
     justify-content: center;
     height: 100vh;
     align-items: center;
-    background-color: aliceblue;
+    background-color: cyan;
 }
 
 .search-bar-container{
@@ -21,6 +21,8 @@ body{
     border-radius: 50px;
     margin:10px;
     position: relative;
+    /* animation part */
+    transition: width 1.5s;
 }
 
 .magnifier{
@@ -35,6 +37,9 @@ body{
     width: 30px;
     position: absolute;
     right:10px;
+    /* animation part */
+    transition:width 0.4s ;
+    transition-delay: 1s;
 }
 
 .input{
@@ -45,6 +50,10 @@ body{
     outline: none;
     /* it makes the border remove */
     color:rgb(100,100,100);
+    width:100%;
+    /* animation part */
+    transition:width 1s ;
+    transition-delay: 0.4s;
 }
 
 .active.search-bar-container{
